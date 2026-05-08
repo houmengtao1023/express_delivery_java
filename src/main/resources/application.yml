@@ -1,0 +1,19 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: express-delivery
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+
+logging:
+  level:
+    root: info
+    com.lazy.express: debug
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n"
